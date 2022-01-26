@@ -1,0 +1,430 @@
+/*#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 254, 254);
+}
+
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+*/  
+          body,html{
+           
+             
+              background-image: linear-gradient(rgba(220, 45, 236, 0.342), lightgrey, lightblue, rgb(41, 79, 138));
+              
+              
+          }
+          
+          header{
+              background-color: rgba(73, 87, 141, 0.603);
+              padding: 14px 20px;
+  background-image: url(../ProjektImages/car-auto-logo-bl-.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+          }
+          h1{
+              font-style: italic;
+              color: white;
+              text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey;
+          }
+          .navbar {
+    overflow: hidden;
+    background-color: rgb(19, 43, 75);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px grey;
+    
+
+  }
+ 
+  .navbar a > #sign{
+      position:relative;
+    float: right;
+  }
+  #btn1{
+    background-color: darkgrey;
+    border: none;
+    color: white;
+   padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    
+}
+#btn1:hover{
+    background-color: gray;
+}
+.text{
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 20%;
+  text-align: left;
+
+  margin:0;
+}
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+   
+
+    
+  }
+  .dropbtn{
+      text-shadow: 2px 2px 8px grey;
+  }
+  
+   .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown:hover .dropbtn, .dropbtn:focus{
+    background-color:gray;
+  }
+  .navbar a:hover{
+      background-color:gray;
+  }
+  
+  .jeep{
+    position: relative;
+    top:-350px;
+    left:400px;
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    opacity: 0.9;
+  box-shadow: 5px 5px 10px gray;
+
+  }
+
+  main .logos{
+  float: right;
+  clear: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .logos{
+   background-image: url(../ProjektImages/360_F_206919616_itb7XD1ZYUBNwwoJMvvXbaAZl8vAwSJU.jpg);
+   position: relative;
+   top:-100px;
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   left: 0px;
+   animation-name: moves;
+   animation-duration: 5s;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite; 
+
+  }
+ /* @keyframes moves{
+    from{
+      transform:translateX(-700px);
+    }
+    to{transform: translateX(850px);}
+  }
+  */
+  .dropdown-content {
+      text-shadow: 2px 2px 5px gray;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  
+  #h21{
+    background-image: linear-gradient(blue, lightblue);
+    width: 100%;
+   color: white;
+   text-shadow: 2px 2px 3px black;
+padding: 20px;
+    height: 50px;
+    
+  }
+  #autokuca{
+   width: 100%;
+   border-radius: 5px;
+   padding: 4px;
+   border-radius: 10px;
+   box-shadow: 15px 20px 30px darkgray;
+   background-image: repeating-linear-gradient(lightblue, lightgray);
+  }
+  h3{
+    width: 60%;
+    height: 40px;
+    padding:10px;
+    color: white;
+    text-shadow: 10px 2px 5px black;
+    background-image: linear-gradient(lightblue, blue);
+  }
+  #tires{
+  background-color: lightblue;
+    margin: 5px;
+    font-style: italic;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+  }
+  .sideCars{
+    display: flex;
+  }
+  .tireimage {
+    background-image: url("../ProjektImages/Best-Performance-Tires-According-to-Tire-Rack-Reviews.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .tiretext{
+    text-align: center;
+    color:darkmagenta;
+    text-shadow: 10px 10px 15px white;
+    font-size: 25px;
+  }
+  
+  
+  .tiretext button {
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .tiretext button:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  .artikli{
+    display: flex;
+   flex-direction: column;
+  }
+  .artikli>.custom-select{
+    box-shadow: 5px 10px 15px rgb(43, 43, 87);
+  }
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    margin-bottom: 20px;
+  }
+  .custom-select select {
+    display: none; 
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+    
+  }
+  
+
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* strjelica ide gore */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* sve selektirane uredi */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .about{
+   display: flex;
+   flex-direction: row;
+    background-color: rgba(161, 161, 192, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    
+  }
+  .part1{
+    margin: 5px;
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to right, rgb(160,160,212), rgb(74, 74, 100));
+  }
+  .part2{
+    margin: 5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 75%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(160,160,212), rgb(74, 74, 100));
+  }
+  .part3{
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   width: 40%;
+   text-align: center;
+   border-radius: 10px;
+   background-image: linear-gradient(to right, rgb(160,160,212), rgb(74, 74, 100));
+  }
+  
+  .services{
+    background-image: linear-gradient(lightblue, rgb(103, 103, 214));
+    margin: 0;
+    padding-bottom: 50px;
+    border-radius: 5px;
+   
+  }
+  .services h1{
+    text-align: center;
+    text-shadow: 5px 5px 5px gray;
+  }
+  .services p{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .icon-bar {
+     
+  
+    display: flex;
+    justify-content:space-evenly;
+    align-items: baseline;
+   
+   
+   
+    margin-right: 5px;
+   
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+      
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+
+  footer{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 50px;
+      background-color: rgb(33, 13, 88);
+      border-radius: 10px;
+  }

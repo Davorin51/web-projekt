@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../ProjektCSS/CarsCSS.css">
+    <link rel="stylesheet" href="../ProjektCSS/cargrid.css">
+    <link rel="stylesheet" href="../ProjektCSS/editAuto.css">
+    <style>
+      
+        body{
+             
+             background-image: linear-gradient(rgba(220, 45, 236, 0.342), lightgrey, lightblue, rgb(41, 79, 138));
+             
+             
+         }
+      
+.btn{
+      background-color: darkgrey;
+      border: none;
+      color: white;
+      padding: 12px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    margin: 15px;
+  }
+  .btn:hover{
+      background-color: gray;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+   
+
+    
+  }
+  .dropbtn{
+      text-shadow: 2px 2px 8px grey;
+    
+    border:1px solid black;
+    background: linear-gradient(gray, black);
+    
+    
+    }
+    .dropbtn:hover{
+      background-image: linear-gradient(black, gray);
+    }
+  
+  
+   .dropdown .dropbtn{
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown:hover .dropbtn, .dropbtn:focus{
+    background-color:gray;
+  }
+  .navbar a:hover{
+      background-color:gray;
+  }
+  
+  
+  .dropdown-content {
+      text-shadow: 2px 2px 5px gray;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>DAROS: CARS</h1>
+    </header>
+    <div class="navbar">
+        <a href="../ProjektHTML/Autosalon2.html">Home</a>
+        <a href="../ProjektHTML/Contacts.html">Contacts</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()" id="dropbtn1">Cars
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+              
+            <a href="#">Audi</a>
+            <a href="#">BMW</a>
+            <a href="#">Volskwagen</a>
+            
+          </div>
+          </div> 
+        </div>
+    </div>
+   
+    <main>
+        <div class="row1">
+            <div class="column1">
+              <img src="../ProjektImages/Audia41.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow1" style="width: 300px">
+            </div>
+            <div class="column1">
+              <img src="../ProjektImages/audia42.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow1" style="width: 300px;">
+            </div>
+            <div class="column1">
+              <img src="../ProjektImages/audia43.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow1" style="width: 300px;">
+            </div>
+            <div class="column1">
+              <img src="../ProjektImages/audia44.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow1" style="width: 300px">
+            </div>
+          </div>
+          
+          <article>
+<div id="myModal1" class="modal1">
+    <span class="close cursor1" onclick="closeModal()">&times;</span>
+    <div class="modal-content1">
+  
+      <div class="mySlides1">
+        <div class="numbertext1">1 / 4</div>
+        <img src="../ProjektImages/Audia41.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides1">
+        <div class="numbertext1">2 / 4</div>
+        <img src="../ProjektImages/audia42.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides1">
+        <div class="numbertext1">3 / 4</div>
+        <img src="../ProjektImages/audia43.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides1">
+        <div class="numbertext1">4 / 4</div>
+        <img src="../ProjektImages/audia44.jpg" style="width:100%">
+      </div>
+         
+          
+              
+              <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+          
+            
+              <div class="caption-container1">
+                <p id="caption1"></p>
+              </div>
+          
+            
+              <div class="column1">
+                <img class="demo1" src="../ProjektImages/Audia41.jpg" onclick="currentSlide(1)" alt="Front">
+              </div>
+          
+              <div class="column1">
+                <img class="demo1" src="../ProjektImages/audia42.jpg" onclick="currentSlide(2)" alt="Left-Front">
+              </div>
+          
+              <div class="column1">
+                <img class="demo1" src="../ProjektImages/audia43.jpg" onclick="currentSlide(3)" alt="Back">
+              </div>
+          
+              <div class="column1">
+                <img class="demo1" src="../ProjektImages/audia44.jpg" onclick="currentSlide(4)" alt="Interior">
+              </div>
+            </div>
+          </div>
+
+
+          <hr>
+          <hr>
+
+
+<img id="myImg2" src="../ProjektImages/audia4.jpeg" alt="Model: Audi A4
+Engine : 2.0 TDI
+Year: 2016
+Color: Black 
+////
+If you like the car please exit the picture and follow link bellow" style="width:100%;max-width:300px">
+<p style="color: white;">Audi <a href="../ProjektImages/BUY.html" target="_blank" style="font: 16px; color: white;; text-shadow: 2px 2px 5px grey; text-transform: uppercase;">Buy it</a></p>
+
+
+
+
+<div id="myModal2" class="modal2">
+
+  
+  <span class="close2">&times;</span>
+
+  
+  <img class="modal-content2" id="img012">
+
+  
+  <div id="caption2">
+  </div>
+</div>
+<img id="myImg3" src="../ProjektImages/VW_Passat_B8_Limousine_2.0_TDI_Highline.jfif" alt="Model: VW Passat B8
+Engine : 2.0 TDI
+Year: 2018
+Color: Black 
+////
+If you like the car please exit the picture and follow link bellow" style="width:100%;max-width:300px">
+<p style="color: white;">Volskwagen</p> <a href="../ProjektHTML/BUY.html" target="_blank" style="font: 16px; color: white;; text-shadow: 2px 2px 5px grey; text-transform: uppercase;">Buy it</a>
+
+
+
+
+<div id="myModal3" class="modal2">
+
+ 
+  <span class="close3">&times;</span>
+
+ 
+  <img class="modal-content2" id="img013">
+
+  
+  <div id="caption2">
+  </div>
+</div>
+          </article>
+<hr>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Audi')"> Audi</button>
+  <button class="btn" onclick="filterSelection('BMW')"> BMW</button>
+  <button class="btn" onclick="filterSelection('Volkswagen')"> VW</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Audi">
+    <div class="content">
+      <a href="https://en.wikipedia.org/wiki/Audi_A3">
+      <img src="../ProjektImages/audia3.jpg" alt="Audi" style="width:100%">
+      </a>
+      <h4>Audi A3</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Audi">
+    <div class="content">
+      <img src="../ProjektImages/1920x1080-aa5-sb-191007-big.jpg" alt="bmw" style="width:100%">
+      <h4>Audi A5 </h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column Audi">
+    <div class="content">
+      <img src="../ProjektImages/Audi_A6_2018_(44686504882)_(cropped).jpg" alt="VW" style="width:100%">
+      <h4>Audi A6</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column BMW">
+    <div class="content">
+      <img src="../ProjektImages/bmw5.jfif" alt="Car" style="width:100%">
+      <h4>BMW 5 series</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column BMW">
+    <div class="content">
+      <img src="../ProjektImages/250px-BMW_F13_650i_xDrive_Coupé_Individual_IAA_2011.jfif" alt="Car" style="width:100%">
+      <h4>BMW 6 series</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column BMW">
+    <div class="content">
+      <img src="../ProjektImages/bmw41.jpg" alt="Car" style="width:100%">
+      <h4>BMW 4 series</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column vw">
+    <div class="content">
+      <img src="../ProjektImages/Milijun-VW-Touarega-i-posebna-serija.jpg" alt="vw" style="width:100%">
+      <h4>VW Touareg</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column vw">
+    <div class="content">
+      <img src="../ProjektImages/arteon.jpg" alt="vw" style="width:100%">
+      <h4>VW Arteon</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column vw">
+    <div class="content">
+      <img src="../ProjektImages/1340465.jpeg" alt="vw" style="width:100%">
+      <h4>VW Golf</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+</div>
+    </main>
+
+
+
+    <footer>
+        <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+          <a href="#" class="google"><i class="fa fa-google"></i></a> 
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>
+     </footer>
+     <script src="../ProjektScript/CarsellJava2.js"></script>
+     <script src="../ProjektScript/cargridJAva.js"></script>
+     <script src="../ProjektScript/CARjava.js"></script>
+     <script src="../ProjektScript/CarsSellJava.js"></script>
+     <script src="../ProjektScript/JAVAclick.js"></script>
+</body>
+</html>

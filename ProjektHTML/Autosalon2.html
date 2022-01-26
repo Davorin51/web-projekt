@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autosalon Daras</title>
+<link rel="stylesheet" href="../ProjektCSS/Slideshow.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../ProjektCSS/editAuto.css">
+<script src="../ProjektScript/JAVAclick.js"></script>
+<link rel="stylesheet" href="../ProjektCSS/SignUpCSS.css">
+    
+
+
+</head>
+<body>
+  <header>
+    <h1> Car Saloon Daros
+     
+    </h1>
+
+ </header>
+
+ <div class="navbar">
+     <a href="#home">Home</a>
+     <a href="../ProjektHTML/Cars.html">Cars</a>
+     <a href="#signup">
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="sign">Sign Up</button>
+
+<div id="id01" class="modal">
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+<form class="modal-content" id = "modal-content" action="/action_page.php">
+<div class="container">
+  <h1>Sign Up</h1>
+  <p>Please fill in this form to create an account.</p>
+  <hr>
+  <label for="email"><b>Email</b></label>
+  <input type="text" placeholder="Enter Email" name="email" required>
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <label for="psw-repeat"><b>Repeat Password</b></label>
+  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+  
+  <label>
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+  </label>
+
+  <p>By creating an account you agree to our <a href="#" style="color:darkblue; text-decoration: underline;">Terms & Privacy</a>.</p>
+
+  <div class="clearfix">
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    <button type="submit" class="signupbtn">Sign Up</button>
+  </div>
+</div>
+</form>
+</div>
+
+    </a>
+     
+     <div class="dropdown">
+     <button class="dropbtn" onclick="myFunction()">More info
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content" id="myDropdown">
+         <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+       <a href="../ProjektHTML/Contacts.html">Contact</a>
+       <a href="#">Social</a>
+       <a href="#">Find us</a>
+       <button id="btn1"><i class="fa fa-folder"></i> Folder</button>
+     </div>
+     </div> 
+   </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="../ProjektImages/1920x600-aa4-l-191004-3-v2-oe.jpg" style="width:100%">
+      <div class = "text">The Audi A4 is a line of compact executive cars produced since 1994 by the German car manufacturer Audi, a subsidiary of the Volkswagen Group.<br><span style="font-weight: bolder; text-align: left;">29,999€</span> </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="../ProjektImages/BMW-serija-3-2016-1020x580.jpg" style="width:100%">
+      <div class="text">The BMW 3 Series is a line of compact executive cars manufactured by the German automaker BMW since May 1975. It is the successor to the 02 Series and has been produced in seven different generations. <br><span style="font-weight: bolder;">28,999€</span></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="../ProjektImages/Mecka.jfif" style="width:100%">
+      <div class = "text">The Mercedes-AMG GT (C190 / R190) is a grand tourer produced in coupé and roadster bodystyles by German automobile manufacturer Mercedes-AMG. <br><span>95,999€</span></div>
+    </div>
+    
+    </div>
+ 
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+    <div>
+      <h2 style="text-shadow: 2px 2px 3px darkgrey; text-align: center; font-size: x-large; font-weight: bolder;" id="h21">Welcome to our car dealer site.</h2>
+      <img id="autokuca" src="../ProjektImages/Autohaus-Stefan-Classic-Cars-1030x456.jpg" alt="slika">
+    </div>
+   
+    <br>
+    <main>
+      <h3>Find your most suitable cars in just few clicks</h3>
+      <article class="artikli">
+        <div class="custom-select" style="width:200px;">
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+           <option value="3">Volskwagen</option>
+          </select>
+        </div>
+
+        <div class="custom-select" style="width:200px;">
+          <select>
+            <option value="0">Select year:</option>
+            <option value="1">2000-2021</option>
+            <option value="2">1950-2000</option>
+           <option value="3">1950></option>
+          </select>
+        </div>
+
+        <div class="custom-select" style="width:200px;">
+          <select>
+            <option value="0">Mileage:</option>
+            <option value="1">0-50 000</option>
+            <option value="2">50 000 - 100 000</option>
+           <option value="3">>100 000</option>
+          </select>
+        </div>
+        <div class="custom-select" style="width:200px;">
+          <select>
+            <option value="0">Price:</option>
+            <option value="1">0-50 000$</option>
+            <option value="2">50 000 - 100 000$</option>
+           <option value="3">>100 000$</option>
+          </select>
+        </div>
+        <div class="custom-select" style="width: 200px;">
+          <form>
+            <label for="Place"><span style="text-decoration: solid; color: white; text-shadow: 5px 5px 10px black;">Place or Post Number:</span></label><br>
+            <input type="text" id="Place" name="Place"><br>
+           
+        </div>
+        <img src="../ProjektImages/VW-Touareg-V8-TDI-Abt-Power-Plus-474x316-bab486b640dc6ea1.jpg" alt="slika" class="jeep">
+        
+      </article>
+      <div class="logos">
+        <img src="../ProjektImages/Audi-Logo.png" alt="slika" width="20%">
+        <img src="../ProjektImages/BMW_logo_(gray).svg.png" alt="slika" width="20%">
+        <img src="../ProjektImages/Volkswagen_logo_2019.svg" alt="slika" width="20%">
+      </div>
+      
+      <h2 id="tires">Need new Tires?<br>You have come to the right place</h2>
+      
+      <div class="sideCars">
+        <img src="../ProjektImages/296-2962751_audi-a4-side-view-hd-png-download.png" alt="slika" style="width: 50%;">
+        <img src="../ProjektImages/234-2340723_passat-volkswagen-passat-2019-side-view-hd-png.png" alt="slika" style="width: 50%;">
+      </div>
+
+      <div class="tireimage">
+        <div class="tiretext">
+          <h1 style="font-size: 50px;">Tires on sale</h1>
+          <p>For all weather conditions</p>
+          <button>Order here</button>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="part1">
+          <img src="../ProjektImages/img_avatar.png" alt="slika" style="vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;">
+        About us..
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        
+        </div>
+        <div class="part2">
+          How we all started.. Lorem ipsum dolor sit amet, consectetur adipiscing as nisl eset, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+          <br>
+          <a href="../ProjektHTML/HowItallstarted.html">
+            <img src="../ProjektImages/Howitallstarted_HEADER4.jpg" alt="slika" width="100%">
+          </a>
+        </div>
+        <div class="part3">
+          <img src="../ProjektImages/img_avatar2.png" alt="slika" style="vertical-align: middle; width: 50px; height: 50px; border-radius: 50%;">
+          If you are interested in our website you can call or visit us.
+          <a href="#">
+          <img src="../ProjektImages/mapa.png" alt="slika" height="100px" width="100px" style="cursor: pointer;">
+          </a>
+        </div>
+      </div>
+    </main>
+    <div class="services">
+    <h1>Our services <img src="../ProjektImages/services-icon-png-25.jpg" alt="slika" width="30%" usemap="#mapname"></h1>
+    <map name="mapname">
+      <area shape="rect" coords="0,0, 85, 80" href="https://www.investopedia.com/terms/o/option.asp" alt="slika">
+    </map>
+    <p>Here you can find more about our servcies and how we take care about your car after you buy it.</p>
+
+    </div>
+    <footer>
+      <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="google"><i class="fa fa-google"></i></a> 
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+      </div>
+   </footer>
+
+   
+   <script src = "../ProjektScript/careditJavaSelect.js"></script>
+    <script src="../ProjektScript/JavaSlideSHow.js"></script>
+    <script src="../ProjektScript/javaSignup.js"></script>
+</body>
+</html>
